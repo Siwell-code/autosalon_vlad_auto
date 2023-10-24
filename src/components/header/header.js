@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      <Link className={classes.header__logo} to="/">
+      <Link className={classes.header__logo} to="/autosalon_vlad_auto">
         Vlad Auto
       </Link>
       <nav className={isActive ? classes.navigation : classes.none}>
