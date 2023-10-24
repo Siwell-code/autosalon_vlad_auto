@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  &__logo {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #000000;
+    transition: opacity 0.3s linear;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &__burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  &__burger span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+  }
+  &__burger span:nth-of-type(2) {
+    top: calc(50% - 8px);
+  }
+  &__burger span:nth-of-type(3) {
+    top: calc(50% + 8px);
+  }
+}
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    &_link {
+      font-size: 16px;
+      line-height: 120%;
+      font-weight: 400;
+      color: #000000;
+      transition: opacity 0.3s linear;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &__burger {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+    }
+  }
+  .navigation {
+    position: absolute;
+    top: 89px;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    width: 100%;
+    height: 100vh;
+    &__list {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 400px;
+      height: 100vh;
+      margin: 0 0 0 auto;
+      padding: 20px;
+      border: 1px solid #ffffff;
+      &_item {
+        margin-bottom: 20px;
+      }
+      &_link {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 400;
+        color: #000000;
+        transition: opacity 0.3s linear;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .none {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+    background-color: #ffffff;
+    &__list {
+      align-items: center;
+      max-width: 320px;
+      margin: 0 auto;
+      &_item {
+        margin-bottom: 20px;
+      }
+      &_link {
+        font-size: 16px;
+        line-height: 120%;
+        font-weight: 400;
+        color: #000000;
+        transition: opacity 0.3s linear;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
