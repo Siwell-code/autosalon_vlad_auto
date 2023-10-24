@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/autosalon_vlad_auto/static/css/main.fe82967a.css",
+    "main.js": "/autosalon_vlad_auto/static/js/main.ab3d3d66.js",
+    "static/media/1687238010_bogatyr-club-p-krasivie-oboi-oblaka-krasivo-1.jpg": "/autosalon_vlad_auto/static/media/1687238010_bogatyr-club-p-krasivie-oboi-oblaka-krasivo-1.0b6a97b868593151255e.jpg",
+    "index.html": "/autosalon_vlad_auto/index.html",
+    "main.fe82967a.css.map": "/autosalon_vlad_auto/static/css/main.fe82967a.css.map",
+    "main.ab3d3d66.js.map": "/autosalon_vlad_auto/static/js/main.ab3d3d66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe82967a.css",
+    "static/js/main.ab3d3d66.js"
+  ]
+}
